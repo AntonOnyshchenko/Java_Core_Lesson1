@@ -1,0 +1,49 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+//        Task #1
+        byte byteNumber = 127;
+        short shortNumber = 32767;
+        int intNumber = 2147483647;
+        long longNumber = 2147483648L;
+        double doubleNumber = 21474.83647;
+        float floatNumber = 21474.83647F;
+        char letter = 'a';
+        boolean result = shortNumber > byteNumber;
+//        Task №2
+        System.out.println(Byte.MIN_VALUE);
+        System.out.println(Byte.MAX_VALUE);
+        System.out.println(Short.MIN_VALUE);
+        System.out.println(Short.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Long.MIN_VALUE);
+        System.out.println(Long.MAX_VALUE);
+        System.out.println(Double.MIN_VALUE);
+        System.out.println(Double.MAX_VALUE);
+        System.out.println(Float.MIN_VALUE);
+        System.out.println(Float.MAX_VALUE);
+//        Task № 3
+        int[] myArray = new int[10];
+        for (int i = 0; i < myArray.length; i++) {
+            myArray[i] = 10 + i;
+        }
+        System.out.println(Arrays.toString(myArray));
+        int maxValue = myArray[0];
+        for (int i = 0; i < myArray.length; i++) {
+            if (myArray[i] > maxValue) {
+                maxValue = myArray[i];
+            }
+        }
+        System.out.println(maxValue);
+        int minValue = myArray[0];
+        for (int i = 0; i< myArray.length; i++) {
+            if (myArray[i]< minValue) {
+                minValue = myArray[i];
+            }
+        }
+        System.out.println(minValue);
+
+    }
+}
